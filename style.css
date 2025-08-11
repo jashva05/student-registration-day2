@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background: #dbec86;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background: #91c1ed;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(128, 19, 19, 0.2);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 150px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #2980b9;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.key {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.key:hover {
+  background: #1b5f8c;
+}
+
+.submit-btn {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    width: 100%;
+  }
+}
